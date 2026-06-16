@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  --green: #0F5C4D;
+  --green-light: #1a7a67;
+  --green-pale: #e8f4f1;
+  --green-border: #c5e0da;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+.btn-primary {
+  background: #0F5C4D;
+  color: white;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  transition: background 0.15s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.btn-primary:hover { background: #1a7a67; }
+.btn-primary:disabled { background: #9db8b3; cursor: not-allowed; }
+
+.btn-outline {
+  background: white;
+  color: #0F5C4D;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 1.5px solid #0F5C4D;
+  transition: all 0.15s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.btn-outline:hover { background: #e8f4f1; }
+
+.input-field {
+  width: 100%;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 0.625rem 0.875rem;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.15s;
+  background: white;
+}
+
+.input-field:focus { border-color: #0F5C4D; box-shadow: 0 0 0 3px rgba(15,92,77,0.08); }
+
+.card {
+  background: white;
+  border: 1.5px solid #e8f4f1;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.badge-waiting { background: #fef9c3; color: #854d0e; }
+.badge-active { background: #dcfce7; color: #14532d; }
+.badge-completed { background: #f1f5f9; color: #475569; }
+.badge-skipped { background: #fee2e2; color: #991b1b; }
